@@ -3,183 +3,227 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alfonso Cárdenas Martín</title>
+  <title>Alfonso Cárdenas Martín · Desarrollo web y soporte técnico</title>
+  <meta name="description" content="Portfolio de Alfonso Cárdenas Martín, estudiante de Desarrollo de Aplicaciones Web. Busco prácticas de empresa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#experiencia">Experiencia</a>
-            <a href="#formacion">Formación</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
+        <div class="barra">
+            <a class="marca" href="#inicio">Alfonso Cárdenas</a>
+            <nav aria-label="Principal">
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#formacion">Formación</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
     </header>
 
+    <main>
     <section id="inicio" class="hero">
         <div class="contenedor">
-            <h1>Alfonso Cárdenas Martín</h1>
-            <p>Desarrollo web y soporte técnico</p>
-            <a href="docs/CV_Alfonso_Cardenas_Martin.pdf" target="_blank" rel="noopener">Ver CV</a>
-            <a href="docs/CV_Alfonso_Cardenas_Martin.pdf" download>Descargar CV</a>
+            <div>
+                <h1>Alfonso Cárdenas Martín</h1>
+                <p class="lema">Desarrollo web y soporte técnico. Busco unas prácticas de empresa donde aportar desde el primer día.</p>
+                <div class="acciones">
+                    <a class="btn btn-principal" href="docs/CV_Alfonso_Cardenas_Martin.pdf" target="_blank" rel="noopener">Ver CV</a>
+                    <a class="btn btn-secundario" href="docs/CV_Alfonso_Cardenas_Martin.pdf" download>Descargar CV</a>
+                </div>
+            </div>
+            <aside class="ficha" aria-label="Resumen">
+                <dl>
+                    <div><dt>Estudios</dt><dd>2º de DAW, IES Zaidín Vergeles</dd></div>
+                    <div><dt>Formación previa</dt><dd>Sistemas Microinformáticos y Redes</dd></div>
+                    <div><dt>Prácticas</dt><dd>Artebit y Agencia Digital de Andalucía</dd></div>
+                    <div><dt>Busco</dt><dd>Prácticas de empresa</dd></div>
+                </dl>
+            </aside>
         </div>
     </section>
 
     <section id="sobre-mi">
         <div class="contenedor">
             <h2>Sobre mí</h2>
-            <p>
-                Soy estudiante de 2º del Grado Superior de Desarrollo de Aplicaciones Web en el IES Zaidín Vergeles.
-                Antes cursé Sistemas Microinformáticos y Redes, y eso me permite moverme tanto en desarrollo como
-                en sistemas y soporte técnico.
-            </p>
-            <p>
-                He hecho prácticas en la Agencia Digital de Andalucía, en soporte técnico, y en Artebit, en gestión
-                de usuarios y mantenimiento web. Trabajo con Java, HTML, CSS y JavaScript, y este curso estoy
-                aprendiendo PHP. Busco unas prácticas de empresa donde aportar desde el primer día y seguir aprendiendo.
-            </p>
+            <div class="contenido">
+                <p>
+                    Soy estudiante de 2º del Grado Superior de Desarrollo de Aplicaciones Web en el IES Zaidín Vergeles.
+                    Antes cursé Sistemas Microinformáticos y Redes, y eso me permite moverme tanto en desarrollo como
+                    en sistemas y soporte técnico.
+                </p>
+                <p>
+                    He hecho prácticas en la Agencia Digital de Andalucía, en soporte técnico, y en Artebit, en gestión
+                    de usuarios y mantenimiento web. Trabajo con Java, HTML, CSS y JavaScript, y este curso estoy
+                    aprendiendo PHP. Busco unas prácticas de empresa donde aportar desde el primer día y seguir aprendiendo.
+                </p>
+            </div>
         </div>
     </section>
 
     <section id="experiencia">
         <div class="contenedor">
             <h2>Experiencia</h2>
+            <div class="contenido">
+                <article>
+                    <h3>Prácticas · Artebit</h3>
+                    <p class="meta">Mayo 2026 - junio 2026</p>
+                    <ul>
+                        <li>Apoyo en la gestión de usuarios.</li>
+                        <li>Revisión de páginas web y modificaciones básicas de contenidos y estructura.</li>
+                        <li>Colaboración en tareas técnicas y de mantenimiento digital.</li>
+                    </ul>
+                </article>
 
-            <article>
-                <h3>Prácticas · Artebit</h3>
-                <p>Mayo 2026 - junio 2026</p>
-                <ul>
-                    <li>Apoyo en la gestión de usuarios.</li>
-                    <li>Revisión de páginas web y modificaciones básicas de contenidos y estructura.</li>
-                    <li>Colaboración en tareas técnicas y de mantenimiento digital.</li>
-                </ul>
-            </article>
+                <article>
+                    <h3>Prácticas de Técnico Informático · Agencia Digital de Andalucía</h3>
+                    <p class="meta">Marzo 2025 - junio 2025</p>
+                    <ul>
+                        <li>Soporte a usuarios y mantenimiento de equipos informáticos.</li>
+                        <li>Resolución de incidencias de software y hardware.</li>
+                        <li>Preparación de puestos de trabajo y colaboración en tareas de asistencia técnica.</li>
+                    </ul>
+                </article>
 
-            <article>
-                <h3>Prácticas de Técnico Informático · Agencia Digital de Andalucía</h3>
-                <p>Marzo 2025 - junio 2025</p>
-                <ul>
-                    <li>Soporte a usuarios y mantenimiento de equipos informáticos.</li>
-                    <li>Resolución de incidencias de software y hardware.</li>
-                    <li>Preparación de puestos de trabajo y colaboración en tareas de asistencia técnica.</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Prácticas de Comercio · Tienda Animal</h3>
-                <p>Enero 2023 - junio 2023</p>
-                <ul>
-                    <li>Atención directa a clientes, asesoramiento en productos y apoyo en la venta.</li>
-                    <li>Apoyo en almacén y reposición, manteniendo el orden de los productos.</li>
-                </ul>
-            </article>
+                <article>
+                    <h3>Prácticas de Comercio · Tienda Animal</h3>
+                    <p class="meta">Enero 2023 - junio 2023</p>
+                    <ul>
+                        <li>Atención directa a clientes, asesoramiento en productos y apoyo en la venta.</li>
+                        <li>Apoyo en almacén y reposición, manteniendo el orden de los productos.</li>
+                    </ul>
+                </article>
+            </div>
         </div>
     </section>
 
     <section id="formacion">
         <div class="contenedor">
             <h2>Formación</h2>
+            <div class="contenido">
+                <article>
+                    <h3>Grado Superior en Desarrollo de Aplicaciones Web</h3>
+                    <p class="meta">IES Zaidín Vergeles · 2025 - actualidad</p>
+                </article>
 
-            <article>
-                <h3>Grado Superior en Desarrollo de Aplicaciones Web</h3>
-                <p>IES Zaidín Vergeles · 2025 - actualidad</p>
-            </article>
+                <article>
+                    <h3>Grado Medio en Sistemas Microinformáticos y Redes</h3>
+                    <p class="meta">IES Padre Suárez · 2023 - 2025</p>
+                    <ul>
+                        <li>Nota media: 7.</li>
+                    </ul>
+                </article>
 
-            <article>
-                <h3>Grado Medio en Sistemas Microinformáticos y Redes</h3>
-                <p>IES Padre Suárez · 2023 - 2025</p>
-                <ul>
-                    <li>Nota media: 7.</li>
-                </ul>
-            </article>
+                <article>
+                    <h3>Grado Medio en Comercio y Marketing</h3>
+                    <p class="meta">IES Zaidín Vergeles · 2022 - 2023</p>
+                    <ul>
+                        <li>Formación dual con prácticas en Tienda Animal (C.C. Nevada).</li>
+                    </ul>
+                </article>
 
-            <article>
-                <h3>Grado Medio en Comercio y Marketing</h3>
-                <p>IES Zaidín Vergeles · 2022 - 2023</p>
-                <ul>
-                    <li>Formación dual con prácticas en Tienda Animal (C.C. Nevada).</li>
-                </ul>
-            </article>
-
-            <article>
-                <h3>Educación Secundaria Obligatoria</h3>
-                <p>IES Trevenque · Finalizada en junio de 2022</p>
-            </article>
+                <article>
+                    <h3>Educación Secundaria Obligatoria</h3>
+                    <p class="meta">IES Trevenque · Finalizada en junio de 2022</p>
+                </article>
+            </div>
         </div>
     </section>
 
     <section id="habilidades">
         <div class="contenedor">
             <h2>Habilidades</h2>
+            <div class="contenido">
+                <div class="grupos">
+                    <div class="grupo">
+                        <h3>Desarrollo</h3>
+                        <ul class="niveles">
+                            <li>HTML <span class="nivel" style="--n:2">Medio</span></li>
+                            <li>CSS <span class="nivel" style="--n:2">Medio</span></li>
+                            <li>JavaScript <span class="nivel" style="--n:1">Básico</span></li>
+                            <li>Java <span class="nivel" style="--n:2">Medio</span></li>
+                            <li>MySQL <span class="nivel" style="--n:2">Medio</span></li>
+                            <li>PHP <span class="nivel" style="--n:1">Aprendiendo</span></li>
+                        </ul>
+                    </div>
 
-            <h3>Desarrollo</h3>
-            <ul>
-                <li>HTML: nivel medio</li>
-                <li>CSS: nivel medio</li>
-                <li>JavaScript: nivel básico (aprendiendo en 2º de DAW)</li>
-                <li>Java: nivel medio (programación orientada a objetos)</li>
-                <li>MySQL: nivel medio</li>
-                <li>PHP: aprendiendo en 2º de DAW</li>
-            </ul>
+                    <div class="grupo">
+                        <h3>Herramientas</h3>
+                        <ul class="niveles">
+                            <li>Visual Studio Code <span class="nivel" style="--n:2.5">Medio-avanzado</span></li>
+                            <li>Git y GitHub <span class="nivel" style="--n:1">Básico</span></li>
+                            <li>LibreOffice <span class="nivel" style="--n:2.5">Medio-alto</span></li>
+                        </ul>
+                    </div>
 
-            <h3>Herramientas</h3>
-            <ul>
-                <li>Visual Studio Code: nivel medio-avanzado</li>
-                <li>Git y GitHub: nivel básico</li>
-                <li>LibreOffice (Writer, Calc...): nivel medio-alto</li>
-            </ul>
+                    <div class="grupo">
+                        <h3>Sistemas y soporte</h3>
+                        <ul class="niveles">
+                            <li>Windows Server <span class="nivel" style="--n:2">Medio</span></li>
+                        </ul>
+                        <ul class="simple">
+                            <li>Soporte a usuarios y resolución de incidencias</li>
+                            <li>Mantenimiento de equipos (software y hardware)</li>
+                        </ul>
+                    </div>
 
-            <h3>Sistemas y soporte</h3>
-            <ul>
-                <li>Windows Server: nivel medio</li>
-                <li>Soporte a usuarios y resolución de incidencias</li>
-                <li>Mantenimiento de equipos (software y hardware)</li>
-            </ul>
+                    <div class="grupo">
+                        <h3>Idiomas</h3>
+                        <ul class="niveles">
+                            <li>Español <span class="nivel" style="--n:3">Nativo</span></li>
+                            <li>Inglés <span class="nivel" style="--n:1">Básico</span></li>
+                        </ul>
+                    </div>
+                </div>
 
-            <h3>Idiomas</h3>
-            <ul>
-                <li>Español: nativo</li>
-                <li>Inglés: nivel básico</li>
-            </ul>
-
-            <h3>Competencias</h3>
-            <ul>
-                <li>Responsabilidad y constancia</li>
-                <li>Capacidad de aprendizaje</li>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación y trato cercano</li>
-            </ul>
+                <h3 class="subtitulo">Competencias</h3>
+                <ul class="etiquetas">
+                    <li>Responsabilidad y constancia</li>
+                    <li>Capacidad de aprendizaje</li>
+                    <li>Trabajo en equipo</li>
+                    <li>Comunicación y trato cercano</li>
+                </ul>
+            </div>
         </div>
     </section>
 
     <section id="proyectos">
         <div class="contenedor">
             <h2>Proyectos</h2>
-
-            <article>
-                <h3>lamp-vagrant</h3>
-                <p>
-                    Entorno LAMP (Linux, Apache, MySQL y PHP) automatizado con Vagrant, que se levanta
-                    con un solo comando.
-                </p>
-                <a href="https://github.com/Alfons1604/lamp-vagrant" target="_blank" rel="noopener">Ver en GitHub</a>
-            </article>
+            <div class="contenido">
+                <article class="proyecto">
+                    <h3>lamp-vagrant</h3>
+                    <p>
+                        Entorno LAMP (Linux, Apache, MySQL y PHP) automatizado con Vagrant, que se levanta
+                        con un solo comando.
+                    </p>
+                    <a class="enlace" href="https://github.com/Alfons1604/lamp-vagrant" target="_blank" rel="noopener">Ver en GitHub</a>
+                </article>
+            </div>
         </div>
     </section>
 
     <section id="contacto">
         <div class="contenedor">
             <h2>Contacto</h2>
-            <p>¿Hablamos? Puedes escribirme o encontrarme en:</p>
-            <ul>
-                <li><a href="mailto:alfonsocardenasmartin1604@gmail.com">alfonsocardenasmartin1604@gmail.com</a></li>
-                <li><a href="https://www.linkedin.com/in/alfonso1604/" target="_blank" rel="noopener">LinkedIn</a></li>
-                <li><a href="https://github.com/Alfons1604" target="_blank" rel="noopener">GitHub</a></li>
-            </ul>
+            <div class="contenido">
+                <p>¿Hablamos? Escríbeme y te respondo lo antes posible.</p>
+                <a class="correo" href="mailto:alfonsocardenasmartin1604@gmail.com">alfonsocardenasmartin1604@gmail.com</a>
+                <ul class="enlaces">
+                    <li><a class="enlace" href="https://www.linkedin.com/in/alfonso1604/" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a class="enlace" href="https://github.com/Alfons1604" target="_blank" rel="noopener">GitHub</a></li>
+                </ul>
+            </div>
         </div>
     </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Alfonso Cárdenas Martín</p>
+    </footer>
 </body>
 </html>
