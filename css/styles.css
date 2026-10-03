@@ -1,0 +1,181 @@
+/* Variables */
+:root {
+  --color-fondo: #f8fafc;
+  --color-texto: #1e293b;
+  --color-tarjeta: #ffffff;
+  --color-borde: #e2e8f0;
+  --color-acento: #2563eb;
+  --color-acento-oscuro: #1d4ed8;
+  --color-header: #0f172a;
+  --ancho-max: 900px;
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 70px; /* compensa la altura del header fijo */
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6;
+}
+
+a:focus-visible {
+  outline: 3px solid var(--color-acento);
+  outline-offset: 2px;
+}
+
+/* Header y navegación */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--color-header);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+nav a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #93c5fd;
+}
+
+/* Secciones */
+.contenedor {
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+section:nth-of-type(even) {
+  background-color: var(--color-tarjeta);
+}
+
+/* Tipografía */
+h2 {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--color-acento);
+}
+
+h3 {
+  margin: 1.2rem 0 0.4rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.3rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+a {
+  color: var(--color-acento);
+}
+
+/* Portada */
+.hero {
+  display: flex;
+  align-items: center;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  color: #cbd5e1;
+  margin-bottom: 2rem;
+}
+
+.hero a {
+  display: inline-block;
+  margin: 0.3rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hero a:first-of-type {
+  background-color: var(--color-acento);
+  color: #ffffff;
+}
+
+.hero a:first-of-type:hover {
+  background-color: var(--color-acento-oscuro);
+}
+
+.hero a:last-of-type {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.hero a:last-of-type:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Tarjetas */
+article {
+  margin-bottom: 1.2rem;
+  padding: 1.2rem 1.5rem;
+  background-color: var(--color-tarjeta);
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav {
+    gap: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .contenedor {
+    padding: 3rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
