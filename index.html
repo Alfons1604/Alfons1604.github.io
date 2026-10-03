@@ -7,15 +7,16 @@
   <meta name="description" content="Portfolio de Alfonso Cárdenas Martín, estudiante de Desarrollo de Aplicaciones Web. Busco prácticas de empresa.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Shippori+Mincho:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/animaciones.css">
+  <script src="js/efectos.js" defer></script>
   <script src="js/main.js" defer></script>
 </head>
 <body>
 <header>
   <div class="barra">
     <a class="marca" href="#inicio">Alfonso Cárdenas</a>
-    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
     <nav id="menu" aria-label="Principal">
       <a href="#sobre-mi">Sobre mí</a>
       <a href="#experiencia">Experiencia</a>
@@ -23,6 +24,7 @@
       <a href="#habilidades">Habilidades</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#contacto">Contacto</a>
+      <a class="nav-cv" href="docs/CV_Alfonso_Cardenas_Martin.pdf" target="_blank" rel="noopener">Ver CV</a>
     </nav>
   </div>
 </header>
@@ -51,17 +53,22 @@
 
   <section id="sobre-mi">
     <div class="contenedor">
-      <h2><span class="num" aria-hidden="true">一</span>Sobre mí</h2>
+      <h2><span class="num" aria-hidden="true">1</span>Sobre mí</h2>
       <div class="contenido">
         <p>Soy estudiante de 2º del Grado Superior de Desarrollo de Aplicaciones Web en el IES Zaidín Vergeles. Antes cursé Sistemas Microinformáticos y Redes, y eso me permite moverme tanto en desarrollo como en sistemas y soporte técnico.</p>
         <p>He hecho prácticas en la Agencia Digital de Andalucía, en soporte técnico, y en Artebit, en gestión de usuarios y mantenimiento web. Trabajo con Java, HTML, CSS y JavaScript, y este curso estoy aprendiendo PHP. Busco unas prácticas de empresa donde aportar desde el primer día y seguir aprendiendo.</p>
+        <ul class="cifras">
+            <li><strong data-n="3">3</strong><span>prácticas en empresa</span></li>
+            <li><strong data-n="2">2</strong><span>ciclos de informática</span></li>
+            <li><strong data-n="6">6</strong><span>tecnologías de desarrollo</span></li>
+        </ul>
       </div>
     </div>
   </section>
 
   <section id="experiencia">
     <div class="contenedor">
-      <h2><span class="num" aria-hidden="true">二</span>Experiencia</h2>
+      <h2><span class="num" aria-hidden="true">2</span>Experiencia</h2>
       <div class="contenido">
         <article>
           <h3>Prácticas · Artebit</h3>
@@ -95,7 +102,7 @@
 
   <section id="formacion">
     <div class="contenedor">
-      <h2><span class="num" aria-hidden="true">三</span>Formación</h2>
+      <h2><span class="num" aria-hidden="true">3</span>Formación</h2>
       <div class="contenido">
         <article>
           <h3>Grado Superior en Desarrollo de Aplicaciones Web</h3>
@@ -121,7 +128,7 @@
 
   <section id="habilidades">
     <div class="contenedor">
-      <h2><span class="num" aria-hidden="true">四</span>Habilidades</h2>
+      <h2><span class="num" aria-hidden="true">4</span>Habilidades</h2>
       <div class="contenido">
         <div class="grupos">
           <div class="grupo">
@@ -174,7 +181,7 @@
 
   <section id="proyectos">
     <div class="contenedor">
-      <h2><span class="num" aria-hidden="true">五</span>Proyectos</h2>
+      <h2><span class="num" aria-hidden="true">5</span>Proyectos</h2>
       <div class="contenido">
         <article class="proyecto">
           <h3>lamp-vagrant</h3>
@@ -187,9 +194,9 @@
 
   <section id="contacto" class="oscuro">
     <div class="contenedor">
-      <h2><span class="num" aria-hidden="true">六</span>Contacto</h2>
+      <h2><span class="num" aria-hidden="true">6</span>Contacto</h2>
       <div class="contenido">
-        <p>¿Hablamos? Escríbeme y te respondo lo antes posible.</p>
+        <p>¿Hablamos? Escríbeme.</p>
         <a class="correo" href="mailto:alfonsocardenasmartin1604@gmail.com">alfonsocardenasmartin1604@gmail.com</a>
         <ul class="enlaces">
           <li><a class="enlace" href="https://www.linkedin.com/in/alfonso1604/" target="_blank" rel="noopener">LinkedIn</a></li>
